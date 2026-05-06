@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0B0B"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 🌟 HEADER -->
+        <TextView
+            android:id="@+id/tvLearningTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎓 What do you want to learn today?"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#F8F553"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- 🧩 GRID -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+            <!-- 🔤 ALPHABETS -->
+            <LinearLayout
+                android:id="@+id/cardAlphabet"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#FFF9C4"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_alphabet"
+                    android:contentDescription="Alphabet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alphabets"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- 🔢 NUMBERS -->
+            <LinearLayout
+                android:id="@+id/cardNumbers"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#C8E6C9"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_numbers"
+                    android:contentDescription="Numbers" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Numbers"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- 🐶 WORDS -->
+            <LinearLayout
+                android:id="@+id/cardWords"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#BBDEFB"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_words"
+                    android:contentDescription="Words" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Basic Words"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- 🔺 SHAPES -->
+            <LinearLayout
+                android:id="@+id/cardShapes"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#E1BEE7"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_shapes"
+                    android:contentDescription="Shapes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shapes"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- 🎨 COLORS -->
+            <LinearLayout
+                android:id="@+id/cardColors"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_columnSpan="2"
+                android:orientation="vertical"
+                android:background="#F8A0A0"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/quiz"
+                    android:contentDescription="Colors" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QUIZ"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#070707"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+        </GridLayout>
+
+        <!-- 💖 MOTIVATION -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌟 Learn at your own pace. You’re doing great!"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#D50000"
+            android:gravity="center"
+            android:paddingTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>

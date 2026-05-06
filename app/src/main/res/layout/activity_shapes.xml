@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/peepa">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learn Shapes"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:textColor="#101010"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <!-- SHAPE IMAGE -->
+        <ImageView
+            android:id="@+id/imgShape"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="24dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/circle1" />
+
+        <!-- SHAPE NAME -->
+        <TextView
+            android:id="@+id/tvShape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Circle"
+            android:textSize="58sp"
+            android:textStyle="bold"
+            android:textColor="#000105"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <!-- SPEAK -->
+        <Button
+            android:id="@+id/btnSpeak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔊 Speak"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#080809"
+            android:textColor="#FFFFFF" />
+
+        <!-- NAV -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPrev"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⬅ Prev" />
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Next ➡" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 🎉 CELEBRATION -->
+    <TextView
+        android:id="@+id/tvCelebrate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="🎉 Great Job! 🎉"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#FF6F00"
+        android:gravity="center"
+        android:background="#00B8D4"
+        android:visibility="gone" />
+
+</FrameLayout>

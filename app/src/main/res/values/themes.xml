@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Eduability" parent="Theme.Material3.DayNight.NoActionBar"/>
+    <style name="gameBtn">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:backgroundTint">#FFFFFF</item>
+        <item name="android:textColor">#333</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="cardStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@drawable/dot_active</item>
+        <item name="android:backgroundTint">@null</item> <!-- IMPORTANT -->
+    </style>
+    <style name="colorCardStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">12dp</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:elevation">6dp</item>
+
+        <item name="android:background">@android:color/white</item>
+
+    </style>
+    <style name="colorBtnBase">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+
+    <style name="colorBtnRed" parent="colorBtnBase">
+        <item name="android:background">@drawable/red_card</item>
+    </style>
+
+    <style name="colorBtnBlue" parent="colorBtnBase">
+        <item name="android:background">@drawable/blue_card</item>
+    </style>
+
+    <style name="colorBtnGreen" parent="colorBtnBase">
+        <item name="android:background">@drawable/green_card</item>
+    </style>
+
+    <style name="colorBtnYellow" parent="colorBtnBase">
+        <item name="android:background">@drawable/yellow_card</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFAB00">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accessibility Settings"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- 🔊 TTS -->
+    <Switch
+        android:id="@+id/switchTTS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text to Speech"
+        android:textSize="16sp"/>
+
+    <!-- 🎵 MUSIC -->
+    <Switch
+        android:id="@+id/switchMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Background Music"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"/>
+
+    <!-- 🔠 FONT SIZE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Font Size"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/fontGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/fontSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small"/>
+
+        <RadioButton
+            android:id="@+id/fontMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium"/>
+
+        <RadioButton
+            android:id="@+id/fontLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large"/>
+    </RadioGroup>
+
+    <!-- 🎨 HIGH CONTRAST -->
+    <Switch
+        android:id="@+id/switchContrast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="High Contrast Mode"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

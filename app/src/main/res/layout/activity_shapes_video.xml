@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F0E0F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/tvShapesVideoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Shapes Video"
+            android:textColor="#E90404"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:id="@+id/videoContainerShapes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="@drawable/dialog_emotion_bg"
+            android:elevation="8dp"
+            android:clickable="false"
+            android:focusable="false">
+
+            <VideoView
+                android:id="@+id/videoViewShapes"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:clickable="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvShapesDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn shapes with fun visuals and sound."
+            android:textColor="#120209"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:clickable="false"
+            android:focusable="false">
+
+            <Button
+                android:id="@+id/btnPlayShapesVideo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Play"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="#0B0B0B"
+                android:backgroundTint="#C51162"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <Button
+                android:id="@+id/btnBackShapes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="#0F0D0D"
+                android:backgroundTint="#EF6C00"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:padding="18dp"
+            android:background="@drawable/video_card_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wonderful learning 🔷"
+                android:textColor="#0A0B0A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Watching shapes videos daily helps children identify and remember shapes easily."
+                android:textColor="#DD2C00"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgShapesMascot"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/mascot_bg"
+            android:contentDescription="Mascot"
+            android:scaleType="fitCenter" />
+
+    </LinearLayout>
+</ScrollView>

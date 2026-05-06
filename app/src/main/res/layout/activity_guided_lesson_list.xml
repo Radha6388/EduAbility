@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_read">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- HEADER -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guided Lessons"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#040D0C"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learn step-by-step with guidance"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#120800"
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+
+        <!-- LESSON 1 -->
+        <LinearLayout
+            android:id="@+id/lessonAlphabet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E29A08"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔤 Alphabet Practice"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#06090D" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recognize letters with help"
+                android:textSize="14sp"
+                android:textColor="#0D0E0F"
+                android:paddingTop="6dp" />
+        </LinearLayout>
+
+        <!-- LESSON 2 -->
+        <LinearLayout
+            android:id="@+id/lessonNumbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#08F2D2"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔢 Number Recognition"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#1B5E20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Counting with guidance"
+                android:textSize="14sp"
+                android:textColor="#121F13"
+                android:paddingTop="6dp" />
+        </LinearLayout>
+
+        <!-- LESSON 3 -->
+        <LinearLayout
+            android:id="@+id/lessonWords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D50000"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📖 Basic Words"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#231101" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Understand simple words"
+                android:textSize="14sp"
+                android:textColor="#120B01"
+                android:paddingTop="6dp" />
+        </LinearLayout>
+
+        <!-- LESSON 4 -->
+        <LinearLayout
+            android:id="@+id/lessonEmotions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A303F4"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="😊 Emotion Understanding"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#100F10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Learn feelings with examples"
+                android:textSize="14sp"
+                android:textColor="#0B0700"
+                android:paddingTop="6dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

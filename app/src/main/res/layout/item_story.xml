@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:elevation="6dp">
+
+    <TextView
+        android:id="@+id/tvStoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Story Title"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#0D1F0E"/>
+
+
+</LinearLayout>

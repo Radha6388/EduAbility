@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cloud">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- HEADER -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guided Learning"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#160728"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teacher &amp; Therapist Assisted"
+            android:textSize="26sp"
+            android:textColor="#0B0F0C"
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+
+        <!-- GUIDED LESSONS -->
+        <LinearLayout
+            android:id="@+id/cardGuidedLessons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D76196"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📘 Guided Lessons"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0F0301" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step-by-step assisted learning"
+                android:textSize="14sp"
+                android:textColor="#08080B"
+                android:paddingTop="6dp" />
+        </LinearLayout>
+
+        <!-- THERAPIST ACTIVITIES -->
+        <LinearLayout
+            android:id="@+id/cardTherapist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C0D95B"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🧠 Therapist Activities"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0F0D0D" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Focus, emotions &amp; behavior support"
+                android:textSize="14sp"
+                android:textColor="#000B01"
+                android:paddingTop="6dp" />
+        </LinearLayout>
+
+        <!-- PARENT GUIDANCE -->
+        <LinearLayout
+            android:id="@+id/cardParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00BFA5"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👨‍👩‍👧 Parent Guidance"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0D0500" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How parents can assist learning"
+                android:textSize="14sp"
+                android:textColor="#090909"
+                android:paddingTop="6dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

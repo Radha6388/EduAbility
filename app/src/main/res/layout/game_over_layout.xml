@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#F4E0FB">
+
+    <ImageView
+        android:id="@+id/imgMascot"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/mascot_bg" />
+
+    <TextView
+        android:id="@+id/txtFinalScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textColor="#140303"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

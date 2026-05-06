@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dot_active"
+    android:padding="16dp">
+
+    <!-- 🔝 TOP BAR -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎯 Focus Game"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        android:gravity="center"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/tvInstruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap the correct shape"
+        android:textSize="36sp"
+        android:textColor="#1A237E"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <!-- 🧠 SHAPE DISPLAY -->
+    <TextView
+        android:id="@+id/tvShape"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="⭕"
+        android:textSize="120sp"
+        android:textColor="#F2CE10"
+        android:gravity="center" />
+
+    <!-- 🎮 OPTIONS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnCircle"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="⭕"
+            android:textSize="28sp"
+            android:backgroundTint="#81C784"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSquare"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="⬛"
+            android:textSize="28sp"
+            android:backgroundTint="#90CAF9"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnTriangle"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="🔺"
+            android:textSize="28sp"
+            android:backgroundTint="#FFCC80"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- ⭐ SCORE -->
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:gravity="center"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

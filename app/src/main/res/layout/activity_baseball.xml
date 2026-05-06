@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/stadium" />
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#0D0303"/>
+
+        <TextView
+            android:id="@+id/tvLives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   ❤️ 3"
+            android:textSize="20sp"
+            android:textColor="#120404"/>
+    </LinearLayout>
+
+    <!-- Ball -->
+    <ImageView
+        android:id="@+id/imgBall"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/baseball"
+        android:layout_gravity="top|center_horizontal"/>
+
+    <!-- Bat -->
+    <ImageView
+        android:id="@+id/imgPlayer"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/playerbat"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="40dp"/>
+
+</FrameLayout>

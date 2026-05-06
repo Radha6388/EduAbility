@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#1B1313"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title -->
+    <TextView
+        android:text="Tic Tac Toe"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        android:textColor="#DB1A1A"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/statusText"
+        android:text="X's Turn"
+        android:textSize="28sp"
+        android:textColor="#FFD600"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/scoreBoard"
+        android:text="You: 0  |  AI: 0"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:textColor="#F4CE09"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Game Board -->
+    <GridLayout
+        android:columnCount="3"
+        android:background="#A06B6B"
+        android:padding="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- Buttons -->
+        <Button android:id="@+id/btn0" style="@style/gameBtn"/>
+        <Button android:id="@+id/btn1" style="@style/gameBtn"/>
+        <Button android:id="@+id/btn2" style="@style/gameBtn"/>
+        <Button android:id="@+id/btn3" style="@style/gameBtn"/>
+        <Button android:id="@+id/btn4" style="@style/gameBtn"/>
+        <Button android:id="@+id/btn5" style="@style/gameBtn"/>
+        <Button android:id="@+id/btn6" style="@style/gameBtn"/>
+        <Button android:id="@+id/btn7" style="@style/gameBtn"/>
+        <Button android:id="@+id/btn8" style="@style/gameBtn"/>
+
+    </GridLayout>
+
+    <!-- Restart Button -->
+    <Button
+        android:text="Restart Game 🔄"
+        android:onClick="resetGame"
+        android:textAllCaps="false"
+        android:backgroundTint="#FFAB00"
+        android:textColor="#1B0A0A"
+        android:layout_marginTop="30dp"
+        android:padding="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

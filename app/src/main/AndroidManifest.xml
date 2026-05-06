@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eduability">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Eduability">
+        <activity
+            android:name=".AIAssistantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ZenStoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FocusdailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MorningRoutineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DailyLifeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CatchGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BaseballActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MemoryGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TicTacToeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GamesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RhymesVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShapesVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NumbersVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VideoPlayerActivity"
+            android:exported="false" /> <!-- Launcher Activity -->
+        <activity
+            android:name=".EntryActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Authentication -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" /> <!-- Main Home -->
+        <activity
+            android:name=".MainHomeActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" /> <!-- Videos -->
+        <activity
+            android:name=".VideosActivity"
+            android:exported="false" /> <!-- Profile / Settings / Progress -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccessibilityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProgressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" /> <!-- Learning Section -->
+        <activity
+            android:name=".LearningActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlphabetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NumbersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WordsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShapesActivity"
+            android:exported="false" /> <!-- Quiz -->
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false" /> <!-- Play and Learn -->
+        <activity
+            android:name=".PlayLearnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindLetterGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmotionGameActivity"
+            android:exported="false" /> <!-- Read and Listen -->
+        <activity
+            android:name=".ReadListenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StoryActivity"
+            android:exported="false" /> <!-- Guided Learning -->
+        <activity
+            android:name=".GuidedLearningActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuidedLessonListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuidedLessonContentActivity"
+            android:exported="false" /> <!-- Special Support Modules -->
+        <activity
+            android:name=".MotorSkillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmotionRegulationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FocusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TherapistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParentGuidanceActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFDE7"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- 🎉 Celebration Image -->
+    <ImageView
+        android:id="@+id/imgResult"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/celebration"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Result image" />
+
+    <!-- 🏆 SCORE -->
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 5 / 5"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:layout_marginBottom="12dp" />
+
+    <!-- 💬 MESSAGE -->
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amazing job! 🎉"
+        android:textSize="20sp"
+        android:textColor="#5D4037"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <!-- 🔁 BACK BUTTON -->
+    <Button
+        android:id="@+id/btnBackHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:textSize="18sp"
+        android:backgroundTint="#6A1B9A"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
