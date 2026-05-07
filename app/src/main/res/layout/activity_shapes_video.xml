@@ -128,6 +128,186 @@
             android:src="@drawable/mascot_bg"
             android:contentDescription="Mascot"
             android:scaleType="fitCenter" />
+        <!-- 🔺 SHAPES QUIZ SECTION -->
+        <LinearLayout
+            android:id="@+id/quizSectionShapes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:padding="18dp"
+            android:background="#B14D02"
+            android:elevation="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fun Shapes Quiz"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <!-- Q1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Which shape is round?"
+                android:layout_marginTop="12dp"/>
+
+            <RadioGroup
+                android:id="@+id/q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton android:id="@+id/q1a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Circle"/>
+
+                <RadioButton android:id="@+id/q1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Square"/>
+
+                <RadioButton android:id="@+id/q1c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Triangle"/>
+            </RadioGroup>
+
+            <!-- Q2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Which shape has 3 sides?"
+                android:layout_marginTop="12dp"/>
+
+            <RadioGroup
+                android:id="@+id/q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton android:id="@+id/q2a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Triangle"/>
+
+                <RadioButton android:id="@+id/q2b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Circle"/>
+
+                <RadioButton android:id="@+id/q2c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rectangle"/>
+            </RadioGroup>
+
+            <!-- Q3 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Which shape has 4 equal sides?"
+                android:layout_marginTop="12dp"/>
+
+            <RadioGroup
+                android:id="@+id/q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton android:id="@+id/q3a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Square"/>
+
+                <RadioButton android:id="@+id/q3b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Triangle"/>
+
+                <RadioButton android:id="@+id/q3c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Circle"/>
+            </RadioGroup>
+
+            <!-- Q4 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Which shape looks like a box?"
+                android:layout_marginTop="12dp"/>
+
+            <RadioGroup
+                android:id="@+id/q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton android:id="@+id/q4a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rectangle"/>
+
+                <RadioButton android:id="@+id/q4b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Circle"/>
+
+                <RadioButton android:id="@+id/q4c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Triangle"/>
+            </RadioGroup>
+
+            <!-- Q5 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Which shape has no corners?"
+                android:layout_marginTop="12dp"/>
+
+            <RadioGroup
+                android:id="@+id/q5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton android:id="@+id/q5a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Circle"/>
+
+                <RadioButton android:id="@+id/q5b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Square"/>
+
+                <RadioButton android:id="@+id/q5c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Triangle"/>
+            </RadioGroup>
+
+            <!-- Submit -->
+            <Button
+                android:id="@+id/btnSubmitQuiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit Answers"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#43A047"
+                android:textColor="#FFFFFF"/>
+
+            <!-- Result -->
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

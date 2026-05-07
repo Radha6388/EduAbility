@@ -10,23 +10,29 @@
         android:src="@drawable/login_bg"
         android:scaleType="centerCrop" />
 
-    <!-- Center Container -->
+    <!-- Dark Overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3000000"/>
+
+    <!-- Center Card -->
     <LinearLayout
-        android:layout_width="300dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical"
         android:padding="24dp"
-        android:background="#487344">
+        android:background="@drawable/bg_card">
 
         <!-- Title -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Welcome Back"
+            android:text="Welcome Back 👋"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:textColor="@android:color/black"
+            android:textColor="#FFFFFF"
             android:gravity="center"
             android:layout_marginBottom="20dp" />
 
@@ -36,12 +42,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
+            android:textColor="#181616"
+            android:textColorHint="#857F7F"
             android:inputType="textEmailAddress"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:clickable="true"
             android:padding="12dp"
-            android:background="@android:color/white"
+            android:background="@drawable/bg_input"
             android:layout_marginBottom="12dp" />
 
         <!-- Password -->
@@ -50,32 +55,33 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
+            android:textColor="#090707"
+            android:textColorHint="#857F7F"
             android:inputType="textPassword"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:clickable="true"
             android:padding="12dp"
-            android:background="@android:color/white"
+            android:background="@drawable/bg_input"
             android:layout_marginBottom="16dp" />
 
         <!-- Login Button -->
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="LOGIN"
-            android:textColor="@android:color/white"
-            android:background="@android:color/black"
-            android:layout_marginBottom="12dp" />
+            android:layout_height="50dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_button_gradient"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"/>
 
         <!-- Signup -->
         <TextView
             android:id="@+id/tvSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Don't have an account? Sign Up"
+            android:text="Don’t have an account? Sign Up"
             android:textSize="14sp"
-            android:textColor="@android:color/black"
+            android:textColor="#B39DDB"
             android:gravity="center" />
 
     </LinearLayout>

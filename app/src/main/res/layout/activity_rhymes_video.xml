@@ -138,7 +138,7 @@
             android:orientation="vertical"
             android:layout_marginTop="30dp"
             android:padding="18dp"
-            android:background="@drawable/motivation_box_bg"
+            android:background="@drawable/game_bg_gradient"
             android:elevation="6dp">
 
             <TextView
@@ -251,6 +251,67 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Teacher"/>
+            </RadioGroup>
+            <!-- Question 4 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Who is the biggest shark?"
+                android:layout_marginTop="12dp"/>
+
+            <RadioGroup
+                android:id="@+id/q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/q4a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daddy Shark"/>
+
+                <RadioButton
+                    android:id="@+id/q4b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Baby Shark"/>
+
+                <RadioButton
+                    android:id="@+id/q4c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fish"/>
+            </RadioGroup>
+
+            <!-- Question 5 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. What are sharks doing?"
+                android:layout_marginTop="12dp"/>
+
+            <RadioGroup
+                android:id="@+id/q5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/q5a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Swimming"/>
+
+                <RadioButton
+                    android:id="@+id/q5b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sleeping"/>
+
+                <RadioButton
+                    android:id="@+id/q5c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driving"/>
             </RadioGroup>
 
             <Button

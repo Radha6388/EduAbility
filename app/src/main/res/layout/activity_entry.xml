@@ -1,21 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cloud"
-    android:orientation="vertical">
+    android:background="@drawable/bg_entry_gradient">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-    <Button
-        android:id="@+id/btnNext"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layoutBottom"/>
+
+    <!-- Bottom Section -->
+    <LinearLayout
+        android:id="@+id/layoutBottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="24dp"
-        android:background="@drawable/alphabet_card_bg"
-        android:text="Next" />
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Indicator -->
+        <LinearLayout
+            android:id="@+id/dotsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <View style="@style/dotActive"/>
+            <View style="@style/dotInactive"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Next"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_button_gradient"/>
+    </LinearLayout>
+
+</RelativeLayout>

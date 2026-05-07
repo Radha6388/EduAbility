@@ -17,6 +17,8 @@ public class LoginActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     private EditText etEmail, etPassword;
+    private Button btnLogin;
+    private TextView tvSignup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +27,16 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
+        // 🔗 Link UI
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPassword);
+        btnLogin = findViewById(R.id.btnLogin);
+        tvSignup = findViewById(R.id.tvSignup);
 
-        Button btnLogin = findViewById(R.id.btnLogin);
-        TextView tvSignup = findViewById(R.id.tvSignup);
-
+        // 🔘 Login Click
         btnLogin.setOnClickListener(v -> loginUser(v));
 
+        // 🔗 Go to Signup
         tvSignup.setOnClickListener(v ->
                 startActivity(new Intent(this, SignupActivity.class))
         );
@@ -43,19 +47,56 @@ public class LoginActivity extends AppCompatActivity {
         String email = etEmail.getText().toString().trim();
         String password = etPassword.getText().toString().trim();
 
-        if (email.isEmpty() || password.isEmpty()) {
-            showMessage(view, "Enter email and password");
+        // ❗ Validation
+        if (email.isEmpty()) {
+            etEmail.setError("Enter email");
+            etEmail.requestFocus();
             return;
         }
 
+        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            etEmail.setError("Enter valid email");
+            etEmail.requestFocus();
+            return;
+        }
+
+        if (password.isEmpty()) {
+            etPassword.setError("Enter password");
+            etPassword.requestFocus();
+            return;
+        }
+
+        // ⏳ Loading state
+        btnLogin.setEnabled(false);
+        btnLogin.setText("Logging in...");
+
+        // 🔐 Firebase Login
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(task -> {
+
+                    // Reset button
+                    btnLogin.setEnabled(true);
+                    btnLogin.setText("Login");
+
                     if (task.isSuccessful()) {
+
                         showMessage(view, "Welcome back 😊");
+
+                        // Clear fields
+                        etEmail.setText("");
+                        etPassword.setText("");
+
+                        // Go to Home
                         startActivity(new Intent(this, MainHomeActivity.class));
                         finish();
+
                     } else {
-                        showMessage(view, "Invalid credentials");
+
+                        showMessage(view,
+                                task.getException() != null ?
+                                        task.getException().getMessage() :
+                                        "Login failed");
+
                     }
                 });
     }

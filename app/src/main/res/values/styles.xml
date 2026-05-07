@@ -1,0 +1,15 @@
+<resources>
+<style name="dotActive">
+    <item name="android:layout_width">12dp</item>
+    <item name="android:layout_height">12dp</item>
+    <item name="android:layout_margin">4dp</item>
+    <item name="android:background">@drawable/dot_indicator_active</item>
+</style>
+
+<style name="dotInactive">
+<item name="android:layout_width">8dp</item>
+<item name="android:layout_height">8dp</item>
+<item name="android:layout_margin">4dp</item>
+<item name="android:background">@drawable/dot_indicator_inactive</item>
+</style>
+</resources>
