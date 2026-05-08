@@ -1,103 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Background Image -->
+    <!-- Background -->
     <ImageView
-        android:id="@+id/bgImage"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:src="@drawable/forgot_password_pana"
-        android:scaleType="centerCrop"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/login_bg"
+        android:scaleType="centerCrop"/>
 
-    <!-- Signup Box (Corner Positioned) -->
+    <!-- Overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"/>
+
+    <!-- Card -->
     <LinearLayout
-        android:id="@+id/signupBox"
-        android:layout_width="227dp"
-        android:layout_height="486dp"
-        android:background="#FA0303"
-
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="vertical"
-        android:padding="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.273">
+        android:padding="24dp"
+        android:background="@drawable/bg_card">
 
         <!-- Title -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
+            android:text="Create Account ✨"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
             android:gravity="center"
-            android:text="Create Account"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="20dp"/>
 
-        <!-- Full Name -->
+        <!-- Name -->
         <EditText
+            android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:background="@android:color/white"
             android:hint="Full Name"
-            android:padding="10dp" />
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
 
         <!-- Email -->
         <EditText
-
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:background="@android:color/white"
             android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:padding="10dp" />
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
 
         <!-- Password -->
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:background="@android:color/white"
             android:hint="Password"
-            android:inputType="textPassword"
-            android:padding="10dp" />
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
 
-        <!-- Sign Up Button -->
+        <!-- Button -->
         <Button
             android:id="@+id/btnSignup"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/card_bg"
-            android:text="SIGN UP"
-            android:textColor="@android:color/white" />
+            android:layout_height="50dp"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_button_gradient"
+            android:elevation="6dp"/>
 
-        <!-- Login Redirect -->
+        <!-- Login -->
         <TextView
             android:id="@+id/tvLogin"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:clickable="true"
-            android:focusable="true"
-            android:gravity="center"
             android:text="Already have an account? Login"
-            android:textColor="@android:color/black"
-            android:textSize="13sp"
-            android:textStyle="bold" />
+            android:textColor="#B39DDB"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

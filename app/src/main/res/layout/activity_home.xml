@@ -1,237 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_entry_gradient"
+    android:fillViewport="true">
 
-    <!-- ================= MAIN CONTENT ================= -->
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#EB934A"
-        android:fillViewport="true">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <LinearLayout
+        <!-- 🔝 TOP BAR -->
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:layout_height="wrap_content">
 
-            <!-- 🔝 TOP BAR -->
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgMascot"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:src="@drawable/classroom" />
 
-                <ImageView
-                    android:id="@+id/imgMascot"
-                    android:layout_width="58dp"
-                    android:layout_height="58dp"
-                    android:src="@drawable/classroom" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toEndOf="@id/imgMascot"
-                    android:layout_marginStart="12dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="EduAbility"
-                        android:textSize="40sp"
-                        android:textStyle="bold"
-                        android:textColor="#000000" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Learning made easy &amp; fun"
-                        android:textSize="23sp"
-                        android:textStyle="bold"
-                        android:textColor="#6200EA" />
-                </LinearLayout>
-
-                <!-- Profile Icon -->
-                <ImageView
-                    android:id="@+id/btnProfile"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/user"
-                    android:background="@drawable/video_card_bg_yellow"
-                    android:padding="8dp" />
-            </RelativeLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="16dp" />
-
-            <!-- 🧠 START LEARNING -->
             <LinearLayout
-                android:id="@+id/cardLearn"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/card_bg"
-                android:orientation="horizontal"
-                android:padding="12dp"
-                android:layout_marginBottom="12dp">
-
-                <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:src="@drawable/classroom" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:paddingStart="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Start Learning"
-                        android:textColor="#000"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Adaptive lessons for every child"
-                        android:textColor="#000" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <!-- 🎮 PLAY & LEARN -->
-            <LinearLayout
-                android:id="@+id/cardPlay"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/strength_card_bg"
-                android:orientation="horizontal"
-                android:padding="12dp"
-                android:layout_marginBottom="12dp">
-
-                <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:src="@drawable/start" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:paddingStart="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Play &amp; Learn"
-                        android:textColor="#ff3113"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Games that improve focus"
-                        android:textColor="#660e16" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <!-- 📖 READ & LISTEN -->
-            <LinearLayout
-                android:id="@+id/cardRead"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/video_card_bg_yellow"
-                android:orientation="horizontal"
-                android:padding="12dp"
-                android:layout_marginBottom="12dp">
-
-                <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:src="@drawable/reading" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:paddingStart="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Read &amp; Listen"
-                        android:textColor="#000000"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Text-to-speech supported stories"
-                        android:textColor="#000000" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <!-- 👩‍🏫 GUIDED MODE -->
-            <LinearLayout
-                android:id="@+id/cardProgress"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/tip_card_bg"
-                android:orientation="horizontal"
-                android:padding="12dp"
-                android:layout_marginBottom="16dp">
-
-                <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:src="@drawable/kindergarten_student_bro" />
+                android:layout_toEndOf="@id/imgMascot"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Guided Learning\nTeacher &amp; Therapist Assisted"
+                    android:text="EduAbility"
+                    android:textSize="40sp"
                     android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textColor="#4A148C"
-                    android:layout_marginStart="12dp" />
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Learning made easy &amp; fun"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:textColor="#6200EA" />
             </LinearLayout>
 
-            <!-- 💖 MOTIVATION -->
-            <TextView
-                android:layout_width="match_parent"
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- 🧠 START LEARNING -->
+        <LinearLayout
+            android:id="@+id/cardLearn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/classroom" />
+
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="🌟 You are doing amazing! Keep learning!"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="#4A148C"
-                android:gravity="center"
-                android:paddingBottom="24dp" />
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="12dp">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Learning"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adaptive lessons for every child"
+                    android:textColor="#000" />
+            </LinearLayout>
         </LinearLayout>
-    </ScrollView>
 
-    <!-- ================= DRAWER CONTENT ================= -->
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigationView"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:background="@android:color/primary_text_dark"
-        app:menu="@menu/drawer_menu"
-        app:headerLayout="@layout/nav_header"
-        app:itemIconTint="@null"
-        app:itemTextColor="#000000"/>
+        <!-- 🎮 PLAY & LEARN -->
+        <LinearLayout
+            android:id="@+id/cardPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/strength_card_bg"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
 
-</androidx.drawerlayout.widget.DrawerLayout>
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/start" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play &amp; Learn"
+                    android:textColor="#ff3113"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Games that improve focus"
+                    android:textColor="#660e16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 📖 READ & LISTEN -->
+        <LinearLayout
+            android:id="@+id/cardRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/video_card_bg_yellow"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/reading" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read &amp; Listen"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text-to-speech supported stories"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 👩‍🏫 GUIDED MODE -->
+        <LinearLayout
+            android:id="@+id/cardProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tip_card_bg"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/kindergarten_student_bro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guided Learning\nTeacher &amp; Therapist Assisted"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#4A148C"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <!-- 💖 MOTIVATION -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌟 You are doing amazing! Keep learning!"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#4A148C"
+            android:gravity="center"
+            android:paddingBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>
